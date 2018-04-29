@@ -31,7 +31,7 @@ while toc <= Tmax
     i = i + 1;
     %% Read buffer data
     %k = fscanf(s)
-    k = arduino(s)
+    k = fscanf(s, '%f')
     %data(i) = k;
     %% Read time stamp
     % If reading faster than sampling rate, force sampling time.
